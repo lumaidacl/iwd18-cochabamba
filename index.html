@@ -10,29 +10,40 @@
   <link rel="import" href="/bower_components/polymer/polymer.html">
   <link rel="import" href="/bower_components/google-youtube/google-youtube.html">
   <link rel="import" href="/bower_components/google-map/google-map.html">
+
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-
-    google-map {
-      height: 600px;
-    }
-  </style>
-  <h1>Web Components y el cambio de juego</h1>
-  <google-youtube
-    video-id="YRbakPKgU5Y"
-    height="700px"
-    width="100%"
-    start="53"
-    autoplay="1">
-  </google-youtube>
+  <h1 class="page__title" >Web Components y el cambio de juego</h1>
+  <div class="polymer-wrapper">
+    <section class="polymer">
+      <div class="polymer__element">
+        <google-youtube
+          video-id="YRbakPKgU5Y"
+          height="500px"
+          width="500px"
+          start="53"
+          autoplay="1">
+        </google-youtube>
+      </div>
+      <div class="polymer__element">
+        <google-map 
+          fit-to-markers 
+          latitude="-17.383498" 
+          longitude="-66.1658448" 
+          zoom="15" 
+          api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
   
-  <google-map fit-to-markers api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
-    <google-map-marker latitude="37.78" longitude="-122.4" draggable="true"></google-map-marker>
-  </google-map>
+          <google-map-marker 
+            latitude="-17.383498" 
+            longitude="-66.1658448" 
+            draggable="true">
+          </google-map-marker>
+  
+        </google-map>
+      </div>
+    </section>
+  </div> 
   
 </body>
 </html>

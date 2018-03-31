@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+google-map {
+  height: 500px;
+  width: 500px;
+}
+
+.page__title {
+  font-weight: 100;
+  text-align: center;
+}
+
+.polymer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.polymer {
+  display: flex;
+
+}
