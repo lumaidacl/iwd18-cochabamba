@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Document</title>
+  <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+  <link rel="import" href="/bower_components/polymer/polymer.html">
+  <link rel="import" href="/bower_components/google-youtube/google-youtube.html">
+  <link rel="import" href="/bower_components/google-map/google-map.html">
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    google-map {
+      height: 600px;
+    }
+  </style>
+  <h1>Web Components y el cambio de juego</h1>
+  <google-youtube
+    video-id="YRbakPKgU5Y"
+    height="700px"
+    width="100%"
+    start="53"
+    autoplay="1">
+  </google-youtube>
+  
+  <google-map fit-to-markers api-key="AIzaSyD3E1D9b-Z7ekrT3tbhl_dy8DCXuIuDDRc">
+    <google-map-marker latitude="37.78" longitude="-122.4" draggable="true"></google-map-marker>
+  </google-map>
+  
+</body>
+</html>

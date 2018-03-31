@@ -1,0 +1,24 @@
+{
+  "name": "iwd18-cochabamba",
+  "authors": [
+    "Luz Maria Maida",
+    "Alejandra Cossio"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^2.6.0",
+    "google-youtube": "GoogleWebComponents/google-youtube#^2.0.0",
+    "google-map": "GoogleWebComponents/google-map#^2.0.4"
+  }
+}
